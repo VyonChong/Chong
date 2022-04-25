@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <title>BOOKSTORE.MY</title>
+        <link rel="stylesheet" href="index.css">
+
+        <script type = "text/javascript">
+
+            function displayNextImage() {
+                x = (x === images.length - 1) ? 0 : x + 1;
+                document.getElementById("img_href").href = href[x];
+                document.getElementById("img").src = images[x];
+            }
+            function displayPreviousImage() {
+                x = (x <= 0) ? images.length - 1 : x - 1;
+                document.getElementById("img_href").href = href[x];
+                document.getElementById("img").src = images[x];
+            }
+            function startTimer() {
+                setInterval(displayNextImage, 8000);
+            }
+
+            var images = [], x = -1;
+            images[0] = "mainPicture/pg1.png";
+            images[1] = "mainPicture/pg2.png";
+            images[2] = "mainPicture/pg3.jpg";
+            images[3] = "mainPicture/pg4.jpeg";
+            images[4] = "mainPicture/pg5.png";
+
+            var href = [], x = -1;
+            href[0] = "other1.html";
+            href[1] = "other2.html";
+            href[2] = "other3.html";
+            href[3] = "other4.html";
+            href[4] = "other5.html";
+        </script>
+    </head>
+    <body  onload="startTimer()">
+        <header>
+            <a href="index.html" class="logo"><img class="logo" src="icons/assignment_logo.png" alt="Book logo"></a>
+            <input type="text" placeholder="Search...">
+            <a href=" "><img class="search_icon" src="icons/search_icon.png" alt="searching icon"></a>             
+            <a href="login.html"><img class="login_icon" src="icons/login_icon.png" alt="guest login icon"></a>
+            <a href="wishlist.html"><img class="wishlist_icon" src="icons/wishlist_icon.png" alt="wishlist icon"></a>
+            <a href="cart.html"><img class="cart_icon" src="icons/cart_icon.png" alt="Shopping cart icon"></a>
+        </header>
+        <nav id = "dropDown">  
+            <a href="All.html" class="listName listName_1">All</a>
+            <a href="ListA.html" class="listName listName_2">Top Sales</a>
+            <a href="ListB.html" class="listName listName_3">Fiction</a>
+            <a href="ListC.html" class="listName listName_4">NonFiction</a>
+            <a href="ListD.html" class="listName listName_5">Teen</a>
+            <a href="ListE.html" class="listName listName_6">Kids</a>
+            <ul class="dropList dropList_1">
+                <li class="list_topic">All Categories</li>
+                <li><a href="ListA.html">Top sales book 2021</a></li>
+                <li><a href="ListB_1.html">Monthly picks Fiction books</a></li>
+                <li><a href="ListC_1.html">Monthly picks Nonfiction books</a></li>
+                <li><a href="ListD_1.html">Best book for Teen</a></li>
+                <li><a href="ListE_1.html">Best book for Kids</a></li>
+            </ul>
+            <ul class="dropList dropList_3">
+                <li class="list_topic">Fiction Books</li>
+                <li><a href="ListB_1.html">Monthly Picks</a></li>
+                <li><a href="ListB_2.html">General Fiction</a></li>
+                <li><a href="ListB_3.html">Horror</a></li>
+                <li><a href="ListB_4.html">Manga</a></li>
+            </ul>
+            <ul class="dropList dropList_4">
+                <li class="list_topic">NonFiction Books</li>
+                <li><a href="ListC_1.html">Monthly Picks</a></li>
+                <li><a href="ListC_2.html">Self-help</a></li>
+                <li><a href="ListC_3.html">History</a></li>
+                <li><a href="ListC_4.html">Natural</a></li>
+            </ul>
+            <ul class="dropList dropList_5">
+                <li class="list_topic">For Teen</li>
+                <li><a href="ListD_1.html">Best Books</a></li>
+                <li><a href="ListD_2.html">Rom-com</a></li>
+                <li><a href="ListD_3.html">Sci-fi</a></li>
+                <li><a href="ListD_4.html">Tictok book</a></li>
+            </ul>
+            <ul class="dropList dropList_6">
+                <li class="list_topic">For Kids</li>
+                <li><a href="ListE_1.html">Best Books</a></li>
+                <li><a href="ListE_2.html">Board book</a></li>
+                <li><a href="ListE_3.html">Picture book</a></li>
+                <li><a href="ListE_4.html">Story book</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="main_image">
+                <img class="left_arrow" type="button" src="icons/arrow_icon.png" title="previous" onclick="displayPreviousImage()" align="right">
+                <a href="other1.html" id="img_href"><img id="img" src="mainPicture/pg1.png"></a>
+                <img class="right_arrow" type="button" src="icons/arrow_icon.png" title="next" onclick="displayNextImage()" align="left">
+            </div>
+            <div class="category"><hr>
+                <h1>Top Sales Books 2021</h1><hr>
+                <div class="book">
+                    <a href="BookA1.html"><img class="A A1" src="TopSales/book_A1.jpg" alt="People We Meet on Vacation" title="People We Meet on Vacation"></a>
+                    <a href="BookA2.html"><img class="A A2" src="TopSales/book_A2.jpg" alt="Malibu Rising" title="Malibu Rising"></a>
+                    <a href="BookA3.html"><img class="A A3" src="TopSales/book_A3.jpg" alt="The Last Thing He Told Me" title="The Last Thing He Told Me"></a>
+                    <a href="BookA4.html"><img class="A A4" src="TopSales/book_A4.jpg" alt="The Lincoln Highway" title="The Lincoln Highway"></a>
+                    <a href="BookA5.html"><img class="A A5" src="TopSales/book_A5.jpg" alt="Project Hail Mary" title="Project Hail Mary"></a>
+                    <a href="BookA6.html"><img class="A A6" src="TopSales/book_A6.jpg" alt="The Four Winds" title="The Four Winds"></a>
+                    <a href="BookA7.html"><img class="A A7" src="TopSales/book_A7.jpg" alt="Beautiful World, Where Are You" title="Beautiful World, Where Are You"></a>
+                    <a href="ListA_1.html" class="viewAll">View All</a>
+                </div>
+            </div>
+
+            <div class="category"><hr>
+                <h1>Monthly Picks Fiction Books</h1><hr>
+                <div class="booklist">
+                    <div class="book">
+                        <a href="BookB1.html"><img class="B B1" src="Fiction/MonthlyPick/book_B1.jpg" alt="The Stranger in the Lifeboat" title="The Stranger in the Lifeboat"></a>
+                        <a href="BookB2.html"><img class="B B2" src="Fiction/MonthlyPick/book_B2.jpg" alt="The Hare" title="The Hare"></a>
+                        <a href="BookB3.html"><img class="B B3" src="Fiction/MonthlyPick/book_B3.jpg" alt="Every Last Fear" title="Every Last Fear"></a>
+                        <a href="BookB4.html"><img class="B B4" src="Fiction/MonthlyPick/book_B4.jpg" alt="Fake Accounts" title="Fake Accounts"></a>
+                        <a href="BookB5.html"><img class="B B5" src="Fiction/MonthlyPick/book_B5.jpg" alt="Seven Days in June" title="Seven Days in June"></a>
+                        <a href="BookB6.html"><img class="B B6" src="Fiction/MonthlyPick/book_B6.jpg" alt="Good Company" title="Good Company"></a>
+                        <a href="BookB7.html"><img class="B B7" src="Fiction/MonthlyPick/book_B7.jpg" alt="Runner" title="Runner"></a>
+                        <a href="ListB_1.html" class="viewAll">View All</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category"><hr>
+                <h1>Monthly Picks NonFiction Books</h1><hr>
+                <div class="booklist">
+                    <div class="book">
+                        <a href="BookC1.html"><img class="C C1" src="NonFiction/MonthlyPick/book_C1.jpg" alt="Behind the Beautiful Forevers: Life, Death, and Hope in a Mumbai Undercity" title="Behind the Beautiful Forevers: Life, Death, and Hope in a Mumbai Undercity"></a>
+                        <a href="BookC2.html"><img class="C C2" src="NonFiction/MonthlyPick/book_C2.jpg" alt="Freakonomics: A Rogue Economist Explores the Hidden Side of Everything" title="Freakonomics: A Rogue Economist Explores the Hidden Side of Everything"></a>
+                        <a href="BookC3.html"><img class="C C3" src="NonFiction/MonthlyPick/book_C3.jpg" alt="Far from the Tree: Parents, Children, and the Search for Identity" title="Far from the Tree: Parents, Children, and the Search for Identity"></a>
+                        <a href="BookC4.html"><img class="C C4" src="NonFiction/MonthlyPick/book_C4.jpg" alt="Minor Feelings: An Asian American Reckoning" title="Minor Feelings: An Asian American Reckoning"></a>
+                        <a href="BookC5.html"><img class="C C5" src="NonFiction/MonthlyPick/book_C5.jpg" alt="The Omnivore's Dilemma: A Natural History of Four Meals" title="The Omnivore's Dilemma: A Natural History of Four Meals"></a>
+                        <a href="BookC6.html"><img class="C C6" src="NonFiction/MonthlyPick/book_C6.jpg" alt="Fast Food Nation: The Dark Side of the All-American Meal" title="Fast Food Nation: The Dark Side of the All-American Meal"></a>
+                        <a href="BookC7.html"><img class="C C7" src="NonFiction/MonthlyPick/book_C7.jpg" alt="The Sea Around Us" title="The Sea Around Us"></a>
+                        <a href="ListC_1.html" class="viewAll">View All</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category"><hr>
+                <h1>Best Book for Teen</h1><hr>
+                <div class="booklist">
+                    <div class="book">
+                        <a href="BookD1.html"><img class="D D1" src="Teen/ForTeen/book_D1.jpg" alt="The Perks of Being a Wallflower" title="The Perks of Being a Wallflower"></a>
+                        <a href="BookD2.html"><img class="D D2" src="Teen/ForTeen/book_D2.jpg" alt="Angela's Ashes" title="Angela's Ashes"></a>
+                        <a href="BookD3.html"><img class="D D3" src="Teen/ForTeen/book_D3.jpg" alt="Aristotle and Dante Discover the Secrets of the Universe" title="Aristotle and Dante Discover the Secrets of the Universe"></a>
+                        <a href="BookD4.html"><img class="D D4" src="Teen/ForTeen/book_D4.jpg" alt="Between the World and Me" title="Between the World and Me"></a>
+                        <a href="BookD5.html"><img class="D D5" src="Teen/ForTeen/book_D5.jpg" alt="The Fault in Our Stars" title="The Fault in Our Stars"></a>
+                        <a href="BookD6.html"><img class="D D6" src="Teen/ForTeen/book_D6.jpg" alt="A Long Way Gone: Memoirs of a Boy Soldier" title="A Long Way Gone: Memoirs of a Boy Soldier"></a>
+                        <a href="BookD7.html"><img class="D D7" src="Teen/ForTeen/book_D8.jpg" alt="Tiger Eyes" title="Tiger Eyes"></a>
+                        <a href="ListD_1.html" class="viewAll">View All</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category"><hr>
+                <h1>Best Book for Kids</h1><hr>
+                <div class="booklist">
+                    <div class="book">
+                        <a href="BookE1.html"><img class="E E1" src="Kids/ForKid/book_E1.jpg" title="Where the Wild Things Are"></a>
+                        <a href="BookE2.html"><img class="E E2" src="Kids/ForKid/book_E2.jpg" title="The Snowy Day"></a>
+                        <a href="BookE3.html"><img class="E E3" src="Kids/ForKid/book_E3.jpg" title="Goodnight Moon"></a>
+                        <a href="BookE4.html"><img class="E E4" src="Kids/ForKid/book_E4.jpg" title="Blueberries for Sal"></a>
+                        <a href="BookE5.html"><img class="E E5" src="Kids/ForKid/book_E5.jpg" title="Little Bear"></a>
+                        <a href="BookE6.html"><img class="E E6" src="Kids/ForKid/book_E6.jpg" title="Owl Moon"></a>
+                        <a href="BookE7.html"><img class="E E7" src="Kids/ForKid/book_E7.jpg" title="The Giving Tree"></a>
+                        <a href="ListE_1.html" class="viewAll">View All</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div>
+                <img src="icons/assignment_logo.png" alt="Logo" class="logo">
+                <div class ="follow_us">
+                    <h6>Follow Us</h6>
+                    <a href="https://en-gb.facebook.com/login/" target="_blank"><img src="icons/Facebook_icon.png" alt="Facebook Logo" class="icon icon1"></a>
+                    <a href="https://twitter.com/i/flow/login?lang=en" target="_blank"><img src="icons/Twitter_icon.png" alt="Twitter Logo" class="icon icon2"></a>
+                    <a href="https://www.instagram.com/accounts/login/" target="_blank"><img src="icons/Instagram_icon.png" alt="Instagram Logo" class="icon icon3"></a>
+                    <a href="https://www.pinterest.com/login/" target="_blank"><img src="icons/Pinterest_icon.png" alt="pinterest Logo" class="icon icon4"></a>
+                </div>
+            </div>
+            <div class="right_side_footer">
+                <ul>
+                    <li><a href="FAQ.html">F A Q</a></li>
+                    <li><a href="ContactUs.html">C o n t a c t &nbsp; U s</a></li>
+                    <li><a href="PnP.html">P r i v a c y &nbsp; & &nbsp; P o l i c y</a></li>
+                    <li><a href="TnC.html">T e r m &nbsp; & &nbsp; C o n d i t i o n</a></li>
+                    <li><a href="AboutUs.html">A b o u t &nbsp; U s</a></li>
+                </ul><br><br>
+                <i><small>&copy; 2022 All Rights Reserve </small></i> &nbsp;|&nbsp; W W W . B O O K S T O R E . M Y
+            </div>
+        </footer>
+    </body>
+</html>

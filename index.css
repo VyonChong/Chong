@@ -1,0 +1,314 @@
+.html
+{
+    overflow: scroll;
+}
+
+header
+{
+    background-color: #c0c0c0;
+    padding-bottom: 0px;
+    border-bottom: 1px solid;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+    gap: 20px;
+}
+
+.logo
+{
+    width: 20vw;
+    min-width: 200px;
+    height: auto;
+    margin: 10px 0 10px 1vw;
+    grid-row: 1;
+}
+
+/*Searching Bar & Searching Icon*/
+header input
+{
+    font-family: monospace;
+    height: 2vw;
+    width: 42vw;
+    min-width: 500px;
+    min-height: 20px;
+    margin: 25px 0 10px 1.5vw;
+    border-radius: 10px;
+    border: 5px solid white;
+    background-color: rgb(223, 221, 221);
+    grid-row: 1;
+    
+}
+header input:hover
+{
+    border: 5px solid rgb(201, 199, 199);
+}
+.search_icon
+{
+    margin: 28px 0 10px 0.2vw;
+    width: 2vw;
+    min-width: 20px;
+    height: auto;
+    grid-row: 1;
+    grid-column: 0.5;
+}
+
+/*Icon*/
+.login_icon
+{
+    margin: 28px 0 10px 1vw;
+    width: 8vw;
+    min-width: 20px;
+    padding-right: 20px;
+    border-right : 1px solid #302319;
+    grid-row: 1;
+}
+.wishlist_icon
+{
+    margin: 28px 0 10px 0.2vw;
+    width: 2.5vw;
+    min-width: 20px;
+    padding-right: 20px;
+    border-right : 1px solid #302319;
+    grid-row: 1;
+}
+.cart_icon
+{
+    margin: 28px 0 10px 0;
+    width: 3vw;
+    min-width: 20px;
+    padding-right: 50px;
+    grid-row: 1;
+}
+.icon:hover
+{
+    cursor: pointer;
+}
+
+
+/*DropDown List*/
+#dropDown
+{
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+nav
+{
+    margin-top: 15px;
+}
+
+nav a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.listName
+{
+    padding: 10px 6.3vw;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    background-color: rgb(212, 212, 212);
+}
+.listName:hover , ul a:hover
+{
+    color: grey;
+    cursor: pointer;
+}
+
+nav ul li
+{
+    list-style: none;
+    padding: 5px 0;
+}
+
+.list_topic
+{
+    padding: 5px 0;
+    font-size: 22px;
+    font-style: oblique;
+    text-decoration: underline;
+}
+
+.dropList
+{
+    margin-top: 10px;
+    position: absolute;
+    background-color: rgb(223, 221, 221);
+    display: none;
+    width: 80%;
+    margin-left: 5vw;
+    padding: 10px;
+}
+.listName:hover
+{
+    border-bottom: 1px solid goldenrod;
+    background-color: rgb(226, 226, 226);
+}
+.listName_1:hover ~ .dropList_1 , .dropList_1:hover
+{
+    display: block;
+}
+.listName_3:hover ~ .dropList_3 , .dropList_3:hover
+{
+    display: block;
+}
+.listName_4:hover ~ .dropList_4 , .dropList_4:hover
+{
+    display: block;
+}
+.listName_5:hover ~ .dropList_5 , .dropList_5:hover
+{
+    display: block;
+}
+.listName_6:hover ~ .dropList_6 , .dropList_6:hover
+{
+    display: block;
+}
+
+/*main content*/
+body
+{
+    background-color: rgb(241, 241, 241);
+}
+/*1-image*/
+.main_image
+{
+    margin-top: 50px;
+}
+
+#img
+{
+    width: 100%;
+    height: auto;
+    min-width: 500px;
+}
+
+
+.left_arrow
+{
+    cursor: pointer;
+    transition-duration: 1.5s;
+    opacity: 0.2;
+    position: absolute;
+    top: 65vh;
+    
+}
+.right_arrow
+{
+    cursor: pointer;
+    transition-duration: 1.5s;
+    opacity: 0.2;
+    transform: rotate(180deg);
+    position: absolute;
+    top: 65vh;
+    right: 1vw;
+}
+.left_arrow:hover , .right_arrow:hover
+{
+    opacity: 0.8;
+}
+
+
+/*2-categories*/
+.category
+{
+    margin: 100px 5vw;
+}
+.category a:link , .category h2
+{
+    text-decoration: none;
+    color: black;
+}
+
+.book
+{
+    display: grid;
+    grid-template-columns: repeat(4, 192px);
+    grid-template-rows: 300px 300px;
+    column-gap: 142px;
+    row-gap: 50px;
+    margin-top: 30px;
+}
+
+.book img
+{
+    margin: auto !important;
+    display: block;
+    transition-duration: 1.5s;;
+}
+
+.book img:hover
+{
+    position: relative;
+    height: auto;
+    width: 220px;
+    border-bottom: 5px solid red;
+}
+.viewAll
+{
+    text-align: center;
+    font-size: 20px;
+    margin: 70% 0;
+}
+
+/*3-footer*/
+footer
+{
+    margin-top: 100px;
+    padding-left: 25px;;
+    width: 100%;
+    height: 400px;
+    background-color: #c0c0c0;
+    box-shadow: 10px 0 10px rgb(223, 221, 221);;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+}
+
+footer .logo
+{
+    margin-left: 0 !important;
+    margin-top: 50px;
+    width: 412px;
+    height: 67px;
+}
+
+.follow_us
+{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 100px repeat(4, 50px);
+    grid-template-rows: 50px;
+    gap: 20px;
+}
+.follow_us h6
+{
+    text-align: center;
+    font-size: 18px;
+    margin: 12px 0 !important;
+}
+.icon
+{
+    width: 50px;
+    height: auto;
+    margin: auto;
+}
+
+.right_side_footer
+{
+    text-align: center;
+    border-left: 1px solid black;
+}
+.right_side_footer li , .right_side_footer a
+{
+    margin: 30px 0;
+    font-size: 22px;
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+}
+.right_side_footer a:hover
+{
+    text-decoration: underline;
+    cursor: pointer;
+}
